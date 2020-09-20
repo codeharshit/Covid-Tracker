@@ -1,0 +1,27 @@
+<div class = "jumbotron bg-white text-center">
+    <h1 class = "display-4">Country Wise</h1>
+    <hr> <!--Used to show a line between to texts or para-->
+    
+    <div class="mx-auto">
+        <div class="form-group col-lg-5  mx-auto">  <!--col-(lg/sm) defines the space (width) the dropdown takes-->
+            <label for="c">Select Country</label>
+            <select name="" class = "form-control" id="c" #input (change)='updateValues(input.value)'>
+                <option value="{{con}}" *ngFor='let con of countries'>{{con}}</option> <!--iterating over the countries array-->
+            </select>
+        </div>
+    </div>
+    <app-dashboard-card 
+        [totalConfirmed] = 'totalConfirmed'     
+        [totalActive] = 'totalActive'
+        [totalRecovered] = 'totalRecovered'
+        [totalDeaths] = 'totalDeaths'
+    ></app-dashboard-card>
+</div>
+
+
+<div style="text-align:center; margin-top: 160px;">
+    <h6>Made with <span class = "heart">❤</span> by Harshit</h6>    
+    <a href="https://linkedin.com/in/harshitdongre">Linkedin </a>
+    <a href="https://github.com/codeharshit/CovidTracker">Github</a>
+    <!-- more links here -->
+</div>

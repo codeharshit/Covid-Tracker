@@ -1,0 +1,42 @@
+<div class = "row">         <!-- Used this from SemanticUI/Views/statistics (internet)-->
+    <div class = "card col p-3 m-3">
+        <div class = "ui statistic">
+            <div class = "label">
+                <h1>Confirmed</h1>
+            </div>
+            <div class = "value">
+                <h1 style=font-size:50px>{{totalConfirmed}}</h1> <!-- This is called interpolation (directly printing object value)-->
+            </div>
+        </div>
+    </div>
+    <div class = "card col p-3 m-3">
+        <div class = "ui statistic">
+            <div class = "label">
+            <h1>Active</h1>
+            </div>
+            <div class = "value">
+                <h1 style=font-size:50px>{{totalActive}}</h1> <!--You can call these 4 because they are of Home Component-->
+            </div>
+        </div>
+    </div>
+    <div class = "card col p-3 m-3">
+        <div class = "ui statistic">
+            <div class = "label">
+            <h1>Deaths</h1>
+            </div>
+            <div class = "value">
+                <h1 style=font-size:50px>{{totalDeaths}}</h1> <!--You can do interpolation of the same component-->
+            </div>
+        </div>
+    </div>
+    <div class = "card col p-3 m-3">
+        <div class = "ui statistic">
+            <div class = "label">
+            <h1>Recovered</h1>
+            </div>
+            <div class = "value">
+                <h1 style=font-size:50px>{{totalRecovered}}</h1>
+            </div>
+        </div>
+    </div>
+</div>

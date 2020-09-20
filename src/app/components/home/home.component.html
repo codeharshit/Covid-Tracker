@@ -1,0 +1,29 @@
+<div class = "jumbotron bg-white text-center">
+    <h1 class = "display-4">Covid-19</h1>
+    <hr> <!--Used to show a line between to texts or para-->
+    <app-dashboard-card 
+        [totalConfirmed] = 'totalConfirmed'     
+        [totalActive] = 'totalActive'
+        [totalRecovered] = 'totalRecovered'
+        [totalDeaths] = 'totalDeaths'
+    ></app-dashboard-card>  <!--The RHS value is of home component(Parent) which is assigned to Child Component(dashboard-card) -->
+
+    <div class = "row">
+        <div class = "col">
+            <google-chart [data]="pieChart"></google-chart>
+        </div>
+        <div class = "col">
+            <google-chart [data]="columnChart"></google-chart>
+        </div>
+    </div>
+
+</div>
+
+<!-- <h6 style="text-align: center; margin-bottom: 50px;">Made with <span class = "heart">❤</span> by Harshit</h6> -->
+
+<div style="text-align:center; margin-bottom: 30px;">
+    <h6>Made with <span class = "heart">❤</span> by Harshit</h6>    
+    <a href="https://linkedin.com/in/harshitdongre">Linkedin </a>
+    <a href="https://github.com/codeharshit/CovidTracker">Github</a>
+    <!-- more links here -->
+</div>
